@@ -10,28 +10,84 @@
 	<!-- link -->
 	<link rel="stylesheet" href="style/main.css">
 	<!-- script -->
-	<script type="script/main.js"></script>
+	<script src="script/main.js" defer></script>
 </head>
 <body>
 
-<section class="phone-transfer">
-	<div class="cap">
-		<div class="exit">
-			<div class="arrow-left"></div>
-		</div>
-		<div class="transfer">
-			<p class="transfer-text">Платеж выполнен</p>
-		</div>
-		<div class="transfer-phone">
-			<input class="place_1" value="LanTa">
-			<input class="place_2" value=" ₽">
+<!-- 1 страница -->
+
+<section class="sec1">
+	<div class="row">
+		<p class="">переводы</p>
+	</div>
+	
+	<div class="block">
+		<p class="phone-number">телефон получателя</p>
+
+		<input type="text" id="phone-number">
+
+		<div id="click-button1">
+			<button onclick="number()">далее</button>
 		</div>
 	</div>
 </section>
 
-<section class="content">
-	<div class="content-image"></div>
+<!-- 2 страница -->
+
+<section class="sec2">
+	<div class="">
+		<p id="money-number">телефон</p>
+		<p class="money">сумма</p>
+
+		<input type="text" id="money-phone">
+
+		<div id="click-button2">
+			<button onclick="money()">далее</button>
+		</div>
+	</div>
+
+	<div class="white-block"></div>
 </section>
-	
+
+<!-- 3 страница -->
+
+<section class="sec3">
+	<p class="name"><input type="text" value="фамилия имя отчество"></p> 				<!-- ФИО пользователя -->
+	<p id="money-confirm">сумма перевода</p> 																		<!-- сумма перевода -->
+	<p class="commission">0.0</p>																								<!-- комиссия -->
+	<p class="number-cart"><input type="text" value="номер карты"></p>					<!-- номер карты -->
+	<p id="money-number-user">телефон</p>																				<!-- номер телефона -->
+	<p class="write-off">MasterCart Mass</p>																		<!-- счет списания -->
+	<p class="random-document">456477</p>																				<!-- номер документа -->
+	<p class="date-transaction"><input type="text" value="дата отправки"></p>		<!-- дата отправки -->
+
+	<div id="click-button3">перевести</div>
+</section>
+
+<!-- 4 страница -->
+
+<section class="sec4">
+	<div class="phone-transfer">
+		<div class="cap">
+			<div class="exit">
+				<div class="arrow-left"></div>
+			</div>
+
+			<div class="transfer">
+				<p class="transfer-text">Платеж выполнен</p>
+			</div>
+
+			<div class="transfer-phone">
+				<p id="place_1"></p>
+				<p id="place_2"></p>
+			</div>
+		</div>
+
+		<div class="content-image"></div>
+		<div id="operation"></div>
+		<div class="operation-image"></div>
+	</div>
+</section>
+
 </body>
 </html>
